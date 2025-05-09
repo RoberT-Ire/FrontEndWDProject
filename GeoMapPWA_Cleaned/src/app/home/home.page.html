@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Current Location</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <p>Your location: {{ lat }}, {{ lng }}</p>
+    <ion-button routerLink="/search">Search for a place</ion-button>
+  </div>
+  <div id="map"></div>
+</ion-content>

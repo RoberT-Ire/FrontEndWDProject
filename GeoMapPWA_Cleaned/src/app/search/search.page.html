@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Search</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <ion-input [(ngModel)]="query" placeholder="Enter a location"></ion-input>
+    <ion-button (click)="search()">Search</ion-button>
+    <p>{{ result }}</p>
+    <ion-button routerLink="/">Back to map</ion-button>
+  </div>
+</ion-content>
