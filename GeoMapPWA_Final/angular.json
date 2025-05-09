@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "geo-map-pwa": {
+      "architect": {
+        "build": {
+          "options": {
+            "styles": [
+              "node_modules/leaflet/dist/leaflet.css",
+              "src/styles.css"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

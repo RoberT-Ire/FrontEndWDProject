@@ -1,0 +1,9 @@
+{
+  "name": "Geo Map PWA",
+  "short_name": "GeoMap",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "description": "A simple PWA that shows your location and allows location search",
+  "icons": []
+}
