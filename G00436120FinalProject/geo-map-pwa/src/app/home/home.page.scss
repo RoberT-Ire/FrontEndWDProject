@@ -1,0 +1,13 @@
+// Styles the map container to take up most of the screen
+#map {
+  height: 75vh;
+  width: 100%;
+}
+
+// Styles the paragraph that displays coordinates
+.info-text {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 16px;
+  text-align: center;
+}

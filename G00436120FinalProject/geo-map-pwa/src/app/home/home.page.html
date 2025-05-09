@@ -1,0 +1,30 @@
+<!-- This is the header for the home page. It shows the title in the app toolbar. -->
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>My Location</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- This is the main content area for the home page. -->
+<ion-content>
+  <div class="ion-padding">
+    <!-- Displays the user's latitude and longitude -->
+    <p class="info-text">
+      Latitude: {{ lat }}<br>
+      Longitude: {{ lng }}
+    </p>
+
+    <!-- Button to navigate to the search page -->
+    <ion-button
+      routerLink="/search"
+      expand="block"
+      fill="outline"
+      shape="round"
+      color="tertiary">
+      Search for a Place
+    </ion-button>
+  </div>
+
+  <!-- The map container where Leaflet will render the map -->
+  <div id="map"></div>
+</ion-content>

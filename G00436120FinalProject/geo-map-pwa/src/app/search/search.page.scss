@@ -1,0 +1,14 @@
+// Adds spacing below the input item
+ion-item {
+  margin-bottom: 16px;
+}
+
+// Styles the result box so it stands out from the rest of the content
+.result-box {
+  margin: 20px 0;
+  padding: 12px;
+  background: #f3f3f3;
+  border-radius: 8px;
+  text-align: center;
+}
+

@@ -1,0 +1,32 @@
+<!-- The header toolbar for the search page -->
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Search Location</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Main content for searching and displaying results -->
+<ion-content>
+  <div class="ion-padding">
+    <!-- Input field where user types their search query -->
+    <ion-item>
+      <ion-label position="floating">Enter a destination</ion-label>
+      <ion-input [(ngModel)]="query" type="text" clearInput></ion-input>
+    </ion-item>
+
+    <!-- Button to trigger the search -->
+    <ion-button expand="block" shape="round" color="secondary" (click)="search()">
+      Search
+    </ion-button>
+
+    <!-- If there is a result, it will show up here -->
+    <div *ngIf="result" class="result-box">
+      <p>{{ result }}</p>
+    </div>
+
+    <!-- Navigation button to return to the home map -->
+    <ion-button fill="clear" routerLink="/" size="small">
+      ⬅ Back to Map
+    </ion-button>
+  </div>
+</ion-content>
